@@ -1,0 +1,46 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.contenedor {
+  display: flex;
+  width: 450px;
+  margin: 20px;
+  border: 1px solid rgb(224, 217, 217);
+  background-color: aliceblue;
+  border-radius: 40px;
+
+  input{
+    flex: 1;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .botones button{
+    font-size: 30px;
+    color: rgb(237, 225, 225);
+    background-color: black;
+    cursor: pointer;
+  }
+}
+
+.contenedor:focus-within{
+  box-shadow: 0px 2px 5px rgb(0, 63, 119);
+}
+
+.botones button:hover{
+  color:  black;;
+  background-color: rgb(237, 225, 225);
+}
