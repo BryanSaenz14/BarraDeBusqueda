@@ -11,32 +11,53 @@
 
 .contenedor {
   display: flex;
-  width: 450px;
   margin: 20px;
-  border: 1px solid rgb(224, 217, 217);
-  background-color: aliceblue;
+}
+.contenedor .search {
+  display: flex;
+  background-color: rgba(228, 233, 237, 0.6117647059);
+  border: 1px solid rgba(228, 233, 237, 0.6117647059);
   border-radius: 40px;
 }
-.contenedor input {
-  flex: 1;
-  font-size: 25px;
-  margin: 10px;
-  border-radius: 10px;
+.contenedor .search input {
+  background-color: rgba(255, 255, 255, 0.6352941176);
+  border: 1px solid #000000;
+  width: 80%;
+  border-radius: 40px 0px 0px 40px;
 }
-.contenedor .botones button {
-  font-size: 30px;
-  color: rgb(237, 225, 225);
-  background-color: black;
-  cursor: pointer;
+.contenedor .search button {
+  background-color: rgba(235, 233, 233, 0.9098039216);
+  border: 1px solid #000000;
+  border-radius: 0px 40px 40px 0px;
+  width: 20%;
+}
+.contenedor .search button a {
+  color: #000000;
+}
+.contenedor .mic button {
+  background-color: rgba(235, 233, 233, 0.9098039216);
+  box-shadow: 0px 1px 0px rgba(110, 110, 110, 0.5411764706);
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 50%;
+}
+.contenedor .mic button a {
+  color: #000000;
 }
 
-.contenedor:focus-within {
-  box-shadow: 0px 2px 5px rgb(0, 63, 119);
+.search:focus-within {
+  box-shadow: 0px 10px 15px #000000;
 }
 
-.botones button:hover {
-  color: black;
-  background-color: rgb(237, 225, 225);
+.search button:hover {
+  background-color: #ffffff;
+}
+
+.mic button:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px #000000;
 }
 
 /*# sourceMappingURL=Style.css.map */
